@@ -1,0 +1,369 @@
+
+@font-face {
+      font-family: "LiberationSerif-font";
+      src: url("LiberationSerif-Regular.ttf") format("truetype");
+}
+
+.LiberationSerif-font{
+    font-family: "LiberationSerif-Regular";  
+} 
+
+body{
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	background-color: #FFFFFF;
+}
+#conteudo{
+	padding:5px 5px 5px 5px;
+	border:solid #FFCC00 1px;
+	width:400px;
+	height:200px;
+	overflow : auto;
+	color:#333333;
+	background-color:#FFFFFF;
+}
+
+div.conteudodatabela {
+	overflow: auto;
+	margin: 0 auto;
+	padding: 0px 0px 0px 0px;
+}
+
+table {
+	border: none;
+	background-color: "#FFFFFF";
+}
+	
+table>tbody	{  
+	overflow: auto; 
+	overflow-x: hidden;
+}
+	
+  		thead tr	{
+			position:relative; 
+			top: expression(offsetParent.scrollTop); 
+  		}
+	
+  		thead td, thead th {
+			background-color: "#FFFFFF";
+			color: black;
+			font-weight: bold;			
+  		}	
+	
+  		td {
+			color: #000;
+			text-align: left;
+			padding: 0px 0px 0px 0px;
+  		}
+
+.style1 {
+	/*color: #333333;*/
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.style2 {
+	font-family: Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	font-size: 12px;
+}
+.style3 {
+	/*font-weight: bold;*/
+	font-weight: bold;
+	font-size: 14px;
+}
+
+.style4 {font-size: 12px; font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.style5 {font-family: Arial, Helvetica, sans-serif; font-size: 10px; }
+
+.style6 {
+	font-size: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+
+.style8 {
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif; 
+}
+
+.style9 {font-family: Arial, Helvetica, sans-serif; }
+
+.style12 {color: #000000}
+
+.style13 {
+	font-size: small
+}
+.style14 {
+	font-size: 16px
+}
+.style15 {font-size: 14px}
+
+/*---------------------------------*/
+body {
+	background: #FFFFFF;
+	color: #666666;
+	}
+
+h1 {
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	margin:0;
+	padding:0;
+	}
+
+hr {
+	border:none;
+	border-top:1px solid #CCCCCC;
+	height:1px;
+	margin-bottom:25px;
+	}
+
+a {
+	/*color: #900;*/
+	text-decoration: none;
+	}
+
+/* Root = Horizontal, Secondary = Vertical */
+div#usersList {
+	position:absolute;
+	border:1px solid #333333;
+	width:200px;
+	left:127px;
+	top:54px;
+	display:none;
+}
+div#usersList a {
+	float:left;
+	width:190px;
+	clear:both;
+	padding:3px 5px;
+	text-decoration:none;
+}
+div#usersList a:hover {
+	background-color:#666666;
+	color:#FFFFFF;
+}
+
+ul#navmenu {
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	width: 760px; /*For KHTML*/
+	list-style: none;
+	height: 24px;
+	}
+
+ul#navmenu li {
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	float: left; /*For Gecko*/
+	display: inline;
+	list-style: none;
+	position: relative;
+	height: 24px;
+	}
+
+ul#navmenu ul {
+	margin: 0;
+	border: 0 none;
+	padding: 0;
+	width: 160px;
+	list-style: none;
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 0;
+	}
+
+ul#navmenu ul:after /*From IE 7 lack of compliance*/{
+	clear: both;
+	display: block;
+	font: 1px/0px serif;
+	content: ".";
+	height: 0;
+	visibility: hidden;
+	}
+
+ul#navmenu ul li {
+	width: 160px;
+	float: left; /*For IE 7 lack of compliance*/
+	display: block !important;
+	display: inline; /*For IE*/
+	}
+
+/* Root Menu */
+ul#navmenu a {
+	border: 1px solid #FFF;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	padding: 0 6px;
+	float: none !important; /*For Opera*/
+	float: left; /*For IE*/
+	display: block;
+	background: #EAA626;
+	color: #906016;
+	/*font-family:LiberationSerif-font;*/
+	font: bold 12px/23px Verdana, Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	height: auto !important;
+	height: 1%; /*For IE*/
+	}
+
+/* Root Menu Hover Persistence */
+ul#navmenu a:hover,
+ul#navmenu li:hover a,
+ul#navmenu li.iehover a {
+	background: #CCC;
+	color: #FFF;
+	}
+
+/* 2nd Menu */
+ul#navmenu li:hover li a,
+ul#navmenu li.iehover li a {
+	float: none;
+	background: #EAA626;
+	color: #906016;
+	}
+
+/* 2nd Menu Hover Persistence */
+ul#navmenu li:hover li a:hover,
+ul#navmenu li:hover li:hover a,
+ul#navmenu li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover a {
+	background: #CCC;
+	color: #FFF;
+	}
+
+/* 3rd Menu */
+ul#navmenu li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li a {
+	background: #EAA626;
+	color: #906016;
+	}
+
+/* 3rd Menu Hover Persistence */
+ul#navmenu li:hover li:hover li a:hover,
+ul#navmenu li:hover li:hover li:hover a,
+ul#navmenu li.iehover li.iehover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover a {
+	background: #CCC;
+	color: #FFF;
+	}
+
+/* 4th Menu */
+ul#navmenu li:hover li:hover li:hover li a,
+ul#navmenu li.iehover li.iehover li.iehover li a {
+	background: #EAA626;
+	color: #906016;
+	}
+
+/* 4th Menu Hover */
+ul#navmenu li:hover li:hover li:hover li a:hover,
+ul#navmenu li.iehover li.iehover li.iehover li a:hover {
+	background: #CCC;
+	color: #FFF;
+	}
+
+ul#navmenu ul ul,
+ul#navmenu ul ul ul {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 160px;
+	}
+
+/* Do Not Move - Must Come Before display:block for Gecko */
+ul#navmenu li:hover ul ul,
+ul#navmenu li:hover ul ul ul,
+ul#navmenu li.iehover ul ul,
+ul#navmenu li.iehover ul ul ul {
+	display: none;
+	}
+
+ul#navmenu li:hover ul,
+ul#navmenu ul li:hover ul,
+ul#navmenu ul ul li:hover ul,
+ul#navmenu li.iehover ul,
+ul#navmenu ul li.iehover ul,
+ul#navmenu ul ul li.iehover ul {
+	display: block;
+	}
+
+/* abaixo incluido em 20/05/2010 - aqui */
+body{
+	text-align:center; /*Necessário para centralizar no IE.*/ 
+	font-family:Geneva, Arial, Helvetica, sans-serif; /*fontes padrões da página ...*/ 
+	background-color: #FFFFFF;
+}
+
+/*estrutura do site*/
+#estrutura{
+width:760px; /*largura - Bom para todas resoluções desde 800x600*/ 
+margin:0 auto; /*para centralizar em todos navegadores, exceto IE.*/ 
+text-align:left; /*alihhamento do texto para a esquerda.*/
+}
+
+/*div responsável pelo lado esquerdo do site:
+menu, etc...*/
+#esquerda{
+	width:200px; /*largura*/
+	height:505px; /*altura*/
+	float:left; /*flutuar para a esquerda*/
+}
+
+/*Div responsável pelo conteúdo do site*/
+#direita{
+	width:550px; /*largura*/
+	height:500px; /*altura*/
+	padding-left:10px; /* margem "interna" > esquerda */
+	padding-top:5px; /* margem "interna" > superior */
+	background-color:#ffffff; /*fundo*/
+	float:left; /*flutua para a esquerda, ficando do lado da div 
+	esquerda. ou seja: "div esquerda > div direita" */
+	font-size:12px; /*Tamanho da fonte*/
+}
+
+.barra{
+	width:194px;
+	height:28px;
+	padding:9px 3px 3px 3px;
+}
+
+/*Estiliza particularmente os elementos H1
+ dentro do elemento "barra"*/
+.barra h1{
+	color:#EEEEEE; /*cor da fonte*/
+	font-weight:bold; /*fonte em negrito*/
+	font-size:13px; /*tamanho da fonte*/
+	margin:0 0 0 0; /*margens*/
+}
+
+/* Menu */
+
+/*estilizando os elementos de lista,
+que estão dentro da DIV "esquerda", desta forma, quaisquer outros 
+elementos de LISTAS que estiverem fora desta DIV não sofrerão
+alterações.*/
+#esquerda ul
+{
+	list-style-type: none; /*estilo da lista*/
+}
+
+/*estilizando os links que estiverem dentro da div esquerda, e dentro
+dos itens da lista de elementos "li"*/
+#esquerda ul li a
+{
+	font-size:12px; /*tamanho da fonte*/
+	text-decoration: none; /*Sem decoração: "sublinhado ... etc ..."*/
+	color: #585858; /*cor da fonte*/ 
+	cursor:pointer;
+}
+
+#esquerda ul li a:hover
+{
+	color:#ffffff; /*ao passar o mouse, trocar de cor.*/
+	cursor:pointer;
+}

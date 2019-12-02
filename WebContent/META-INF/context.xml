@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+  <Resource 
+  
+  		 name="jdbc/udvnmg_banco"          
+         auth="Container"
+         type="javax.sql.DataSource"
+
+         username="udvnmg"
+         password="57udV@nm6"
+
+         driverClassName="com.mysql.jdbc.Driver"
+	     url="jdbc:mysql://localhost:3306/udvnmg_banco?autoReconnect=true"
+         validationQuery="select 1"
+         
+         maxActive="50"  
+         maxIdle="10"
+            
+         maxWait="-1"   
+ 
+         removeAbandoned="true"  
+         removeAbandonedTimeout="60"
+         logAbandoned="true" />
+
+</Context>
